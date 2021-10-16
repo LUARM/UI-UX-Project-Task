@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# UI-UX Engineer challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This React website allows you to sort location markers representing Starbukcs locations in the Portland Metro Area using user inputs. These inputs include city, zip code, loan amount range, and account number.
 
-## Available Scripts
+# Set Up / Running 
+1) Clone the repository:
+**git clone git@github.com:LUARM/UI-UX-Project-Task.git**
+2) Download the dependencies: 
+**npm i**
+3) In order for the map to work you must get your own google API key as shown in the link:
+**https://developers.google.com/maps/documentation/javascript/get-api-key**
+4) Place your API key in LoadScript found in the return of the Map.js file:
+**EX:** LoadScript googleMapsApiKey='API KEY HERE'
+5) Run with **npm start**
 
-In the project directory, you can run:
+# Figma
+Inital concepts, alternative designs, and future features can be seen on my figma link:
+https://www.figma.com/file/IDIiMkduEgfeDIa1BsriOS/UI-UX-Engineer-challenge?node-id=0%3A1
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Future Goals
+1) Improve the max and min loan amount inputs, so it dispalys as a money value while typing.
+2) Show the amount of locations found after user's filter options where placed .
+3) A list view of all locations that fit the filter options. And a way to sort that list. Also cliking on that list would open up that marker on the map.
+4) Make the filter input section of the website something that can be hidden .
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
