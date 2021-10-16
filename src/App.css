@@ -1,0 +1,14 @@
+.App {
+  text-align: left;
+}
+
+.App-header {
+  background-color: #B6B6B6;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
