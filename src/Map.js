@@ -21,6 +21,7 @@ const onSelect = item => {
   setSelected(item);
 }
 
+//gets the GEOJSON data
 async function fetchJSON() {
 const response = await fetch('https://raw.githubusercontent.com/aspencapital/candidate-project-ui-ux/master/data/coordinates.geojson')
 const responseJson = await response.json();
@@ -32,8 +33,9 @@ useEffect(()=>{
 fetchJSON()
 },[])
 
+//filters the data based on user inputs
 function testWork() {
-  let data1 = filteruserInput()
+  let data1 = filterCityInput()
   let data2 = filterAccounNum(data1)
   let data3 = filterZipInput(data2)
   let data4 = filterLoanInput(data3)
@@ -41,7 +43,7 @@ function testWork() {
  }
 
 
-function filteruserInput() {
+function filterCityInput() {
   if (userInput.userInput.city === undefined || userInput.userInput.city == '')
   {
    return data.features
@@ -101,7 +103,7 @@ function filterLoanInput(data) {
 
   return (
     <LoadScript
-      googleMapsApiKey='API KEY HERE'>
+      googleMapsApiKey='AIzaSyA_6EaJtevMLeg78MeQHvHPgYWKkTRT_qQ'>
       <GoogleMap
         mapContainerStyle={mapStyles}
         zoom={11}

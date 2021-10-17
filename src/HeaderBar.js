@@ -1,5 +1,7 @@
 import React from 'react'
 import './HeaderBar.css';
+import {COLORS} from './Colors.js'
+//Title of the website
 
 function Title() {
   return (

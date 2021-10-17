@@ -1,9 +1,16 @@
+
+:root {
+  --menuGrey: #B6B6B6; 
+}
+
+
 .App {
   text-align: left;
 }
 
+
 .App-header {
-  background-color: #B6B6B6;
+  background-color: var(--menuGrey);
   display: flex;
   flex-direction: column;
   align-items: left;

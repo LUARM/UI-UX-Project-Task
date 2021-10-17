@@ -3,6 +3,8 @@ import MapContainer from './Map';
 import { useState } from "react";
 import './FilterMenu.css';
 
+//Contains user filter inputs and the map
+
 function FilterMenu() {
 
 const [inputs, setInputs] = useState([]);
@@ -18,6 +20,7 @@ const handleChange = (event) => {
   <div className="mainPage">  
     <MapContainer userInput={inputs}></MapContainer>
     <div className="inputListBox">
+      {/*List of all inputs*/}
       <div className="inputList">
         <form  className="inputList">   
           <select className='dropdown'  name="city"  value={inputs.city || ""}  onChange={handleChange}>
@@ -30,6 +33,7 @@ const handleChange = (event) => {
             <option value="Tualatin">Tualatin</option>
             <option value="Woodstock">Woodstock</option>   
           </select>
+          {/*Row of loan amount inputs*/}
           <div className="loanRow">
             <input 
               className='loanInput'
@@ -39,6 +43,7 @@ const handleChange = (event) => {
               value={inputs.minLoanInput || ""} 
               onChange={handleChange}
             /> 
+             {/*Dash between loan amount inputs*/}
             <div className = "dash">
               <h2> _ </h2>
             </div>
