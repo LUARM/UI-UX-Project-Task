@@ -103,7 +103,7 @@ function filterLoanInput(data) {
 
   return (
     <LoadScript
-      googleMapsApiKey='AIzaSyA_6EaJtevMLeg78MeQHvHPgYWKkTRT_qQ'>
+      googleMapsApiKey='Your Input Here'>
       <GoogleMap
         mapContainerStyle={mapStyles}
         zoom={11}
